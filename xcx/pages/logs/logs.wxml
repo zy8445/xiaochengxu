@@ -1,0 +1,207 @@
+<!--pages/logs/logs.wxml-->
+<!-- <text>pages/logs/logs.wxml</text> -->
+<!-- 头部轮播-->
+<view class='container'>
+  <view class='head'>
+    <swiper circular="{{circular}}" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- tab切换 -->
+  <view class='tab'>
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab"               style='background:#fda3db; color:white; border:1px solid #fda3db'>  
+                  #土味情话#
+      </view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+        #一句话证明#
+      </view>
+      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+         #填鸭#
+      </view>
+    </view>
+   
+    
+    <!-- 要切换的页面 -->
+    <view class = "{{currentTab == 0 ? 'show':'hidden'}}" >
+      <scroll-view>
+      <view>
+       <view>
+       
+         <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/1.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+         <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/1.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+        </view>
+      </view>
+      </scroll-view>
+    </view>
+    <view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
+      <scroll-view>
+       <view>
+       <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/2.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+          <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/2.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+       </view>
+       
+      </scroll-view>
+    </view>
+    <view class = "{{currentTab == 2 ? 'show':'hidden'}}">
+      <scroll-view>
+      <view>
+      <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/3.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+        <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/3.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+      </view>
+      </scroll-view>
+    </view>
+     </view>
+ <view style='width:90%;margin:0 auto'>
+        <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/1.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+         <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/1.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+         <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/1.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" comclick="returnData" style="display:inline-block;margin-left:6px"/>
+            </view>
+          </view>
+        </view>
+         
+         <view class='niebiao'>
+          <view class='niebiaoLeft'>
+             <image src='img/1.jpg' style='width:100rpx; height:100rpx;                                                     border-radius:50%'></image>
+          </view>
+           <view class='niebiaoRight'>
+            <text style='color:#75dcad'>土味情话,什么是土味情话? [必读]</text>
+            <view class='methods'>
+              <text> 浏览次</text>
+              <text class='iconfont icon-pinglun'></text>
+              <text style='margin-left:6px'>10</text>
+              <text class='iconfont icon-buzan'></text>
+              <component-com name="0" style="display:inline-block;margin-left:6px;"/>
+            </view>
+          </view>
+        </view>
+        </view>
+   </view>

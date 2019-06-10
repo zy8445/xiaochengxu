@@ -1,0 +1,79 @@
+/* pages/logs/logs.wxss */
+.tab{
+  width: 90%;
+  
+  margin:0 auto;
+  margin-top:20px;
+}
+.about_page{
+  margin: 0 10px;
+}
+.swiper-tab{
+    width: 100%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 58rpx;
+    line-height: 58rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #5995d3;
+    font-size: 13px;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+    border:1px solid #5995d3;
+    border-radius: 20px;
+}
+.active{
+    color:white;
+    background: blue;
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 10px;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+/* 列表 */
+.niebiao{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px auto;
+}
+.niebiaoLeft{
+  flex: 1;
+  /* background: red; */
+}
+.niebiaoRight{
+   flex: 5;
+  font-size: 13px;
+
+}
+.methods{
+  padding-top: 6px;
+  font-size: 10px;
+  color: #666666;
+}
+.methods text:nth-child(1){
+  width: 50%;
+
+  display: inline-block;
+}
+.methods text:nth-child(4){
+  margin-left: 20px;
+}
+.icon-buzan:hover{
+  color: blue;
+}

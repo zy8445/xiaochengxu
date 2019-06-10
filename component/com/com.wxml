@@ -1,0 +1,2 @@
+<!--component/com/com.wxml-->
+<text bindtap='click'>{{name}}</text>

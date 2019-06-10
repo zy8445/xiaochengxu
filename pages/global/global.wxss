@@ -1,0 +1,5 @@
+/* pages/global/global.wxss */
+.head{
+  width: 100%;
+  margin-top:-80px;
+}

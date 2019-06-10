@@ -1,0 +1,85 @@
+<!--pages/personal/personal.wxml-->
+<view class='container'>
+<!-- 头部 -->
+  <view class='head'>
+    <view class='headLeft' style='display:flex'>
+      <view>
+        <image src='img/user.png' style=" width:111rpx;height:110rpx;"></image>
+      </view>
+      <text>匿名用户</text>
+    </view>
+    <view class='headRighr'style='display:flex'>
+      <view>
+        <image src='img/putong.png' style=" width:50rpx;height:51rpx;"></image>
+      </view>
+      <text>普通用户 ></text>
+
+    </view>
+  </view>
+  <!-- 积分 -->
+  <view class='jifen'>
+    <text>
+      0
+      积分
+    </text>
+    <text style='margin-top:10px; opacity:0.3'>
+      |
+    </text>
+    <text>
+      ¥
+      余额
+    </text>
+  </view>
+  <!-- 全部订单 -->
+  <view class='dingdan'>
+    <text>全部订单</text>
+    <text bindtap='tologs'>查看全部订单 ></text>
+  </view>
+  <!-- 四个图标 -->
+  <view class='log'>
+    <view>
+      <image src='img/待支付.png' style='width:80rpx; height:80rpx;                       display:block'>
+      </image>
+      <text>待支付</text>
+    </view>
+    <view>
+       <image src='img/待发货.png' style='width:80rpx; height:80rpx;                      display:block'>
+      </image>
+      <text>待发货</text>
+    </view>
+    <view>
+      <image src='img/待收货.png' style='width:80rpx; height:80rpx;                       display:block'>
+      </image>
+      <text>待收货</text>
+    </view>
+    <view>
+      <image src='img/待评价.png' style='width:80rpx; height:80rpx;                      display:block'>
+      </image>
+      <text>待评价</text>
+    </view>
+  </view>
+  <!-- 我的购物车 -->
+  <view class='car' style='margin-top:15px;'>
+    <view class='carLeft' style='margin-left:20px;'>
+      <image src='img/myself0.png' style='width:50rpx;height:50rpx;'></image>
+      <navigator style="display:inline-block" url="../car/car" open-type="switchTab" hover-class="other-navigator-hover">我的购物车</navigator>
+    </view>
+    <view class='carRight' style='margin-right:20px;'>
+      >
+    </view>
+  </view>
+   <view class='car'>
+    <view class='carLeft' style='margin-left:20px; display:flex'>
+      <view style=''>
+        <image src='img/地址管理.png' style='width:60rpx;height:70rpx;'></image>
+      </view>
+      <navigator style='display:inline-block' url="../global/global" open-type="navigate" hover-class="other-navigator-hover">地址管理</navigator>
+    </view>
+    <view class='carRight' style='margin-right:20px;'>
+      >
+    </view>
+  </view>
+  <view class='kongbai'>
+  
+  </view>
+</view>
